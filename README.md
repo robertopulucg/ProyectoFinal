@@ -1,4 +1,6 @@
 # ProyectoFinal
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/6cdda345-a4b1-45a1-86c8-fb7ba4383301)
+
 Proyecto Final 
  
 Universidad Mariano Gálvez de Guatemala Facultad de Ciencias de la Administración Maestría en Administración de Negocios Curso: Escenarios Para los Negocios Catedrático: Ing. Carlos Alberto Arias López
@@ -50,21 +52,28 @@ Para inspeccionar la observación número 64, nos muestra en el marco de datos.
 B.	ANALISIS DE DATOS
 La base de datps utilizada esta denominada como “data(proyecto_final)”.
 Con esta función podemos verificar la impresión de nuestra tabla para poder revisar los datos que vamos analizar y poder entender que es lo que necesitamos analizar.
- 
+ ![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/92a96551-8453-4070-887d-4219c6b967a1)
+
 Por medio de este código se puede visualizar toda la información de la base de datos para poder analizar la información que necesitamos desarrollar.
 
 Con la función “STR” se puede visualizar todas las variables que contiene nuestra base de datos que estamos analizando.
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/99098dc4-0098-429d-b7e1-3a0138b29485)
 
 La función “HEAD” muestra las primeras 5 variables que se tienen en la base de datos como se muestra en la siguiente imagen:
- 
+ ![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/bbf1580b-5a98-44cb-b466-700c0b3c64ac)
 La función “TAIL” nos muestra las ultimas variables de la base de
 datos.
 
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/212d7cbd-6281-4d16-92db-8b4645755b74)
+
 La función “summary” nos muestra el resumen de todas variables de nuestra base de datos.
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/04dade2d-d076-4480-8e74-ab85db8be151)
+
 
 Lo interesante de la función “attach” es que nos permite ver el resumen especifico de la columna que deseamos revisar lo que nos da una proyección de análisis más limpia. Por ejemplo: con la función “summary() más la columna que deseamos analizar “cliente” nos da el resumen detallado como se muestra en la siguiente imagen:
  
 Min. 1st Qu. Median	Mean 3rd Qu.	Max. 1.0	990.8 1992.0 1998.6 3000.0 4000.0
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/13ffae14-d836-4635-a6ea-bfa7f3c8d59b)
 
 Con el comando “summary” sucesivamente se puede ir analizando las columnas que se deseen, para que analice un campo en específico lo cual resulta como beneficio para el análisis que se requiera, podemos usar los siguientes comandos, por ejemplo:
 
@@ -77,20 +86,25 @@ Con el comando “summary” sucesivamente se puede ir analizando las columnas q
 •	sd(wage)
 C.	VISUALIZACIÓN DE DATOS
 Con la función “hist (columna x, freq = FALSE)” se puede analizar el histograma de los datos en validación para determinar la toma de decisiones de forma efectiva.
- 
+ ![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/b12d2777-f0fb-4e09-83d1-e5f2650cfeb8)
+
 La función “hist(log(columna x), freq = FALSE)” permite agrupar la gráfica de la siguiente forma lo cual resulta de beneficio para el análisis en gestión.
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/69dd1c44-1e38-4368-992d-5a40c9ff345d)
 
 Con la función “lines (density (log (Columna x)), col = 4)” se puede agregar líneas en la gráfica lo que resulta relevante para el análisis de datos, como se muestra a continuación:
 
 •	lines(density(log(columna x)), col = 3)
 •	lines(density(log(columna x)), col = 2)
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/ba716f1e-b451-4685-94c3-685890aa4a2c)
  
 Variables Categóricas
 
 Para determinar variables categóricas se usa el comando “summary (columna x)” según la columna que se necesita analizar para graficar los campos en análisis.
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/3e3a4640-57f5-4952-9767-d2b610f5efe5)
 
 D.	CIENCIA DE DATOS
 1.	REGRECIÓN LINEAL
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/85c5c5fb-e529-4627-a94b-a4797857c873)
 
 Interpretación de los Coeficientes
 
@@ -142,8 +156,10 @@ Primero, es necesario instalar y cargar las librerías que utilizaremos para la 
 El código para instalar y cargar estas librerías es el siguiente:
 
 install.packages("rvest") install.packages("dplyr") install.packages("stringr") install.packages("tidyverse")
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/a884b928-f815-47f5-bad1-2573c9b0943c)
 
 library(rvest) library(dplyr) library(stringr) library(tidyverse)
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/26414cb9-faa3-4104-ad44-65f0b4643389)
 
 2.	Leer una página web:
 Luego se utiliza la función `read_html()` para leer el contenido de una página web. En este ejemplo, se usará la página de Wikipedia sobre el lenguaje de programación R.
@@ -153,12 +169,16 @@ El código para leer la página web es el siguiente:
 url <- 'https://en.wikipedia.org/wiki/R_(programming_language)' webpage <- read_html(url)
 
 Quedando de la siguiente manera:
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/afea6abc-932d-422f-b032-832e3ca8df04)
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/ebe056e4-e4f6-4f8a-b871-29fefbabf327)
 
 3.	Extraer datos específicos
 Luego extraemos datos específicos de la página web. En este caso, queremos obtener los párrafos ocho, veinticuatro y cuarenta de la sección principal y la tabla de información (infobox) sobre el lenguaje R.
 Para saber cuántos párrafos tiene la página web de donde se está sacando la información se puede utilizar el siguiente código:
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/a4b650fb-278a-4d0c-b65d-5312b1b3f108)
 
 Dando como resultado lo siguiente:
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/5923121d-ed84-4ffe-88b0-473dc462bf13)
 
 Este código se puede utilizar siempre para saber cuántos párrafos va tener la página web de donde se esté sacando la información y cómo podemos observar esta página cuenta con 91 párrafos.
  
@@ -166,6 +186,7 @@ Continuando con la extracción de párrafos usamos selectores CSS para identific
 
 Eight_paragraph <- webpage %>% html_node('p') %>%
 html_text() print(Eight_paragraph)
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/17c1f225-b8a5-4a4e-a71a-8d912adf6431)
  
 Luego se tiene la opción de ir a extraer la tabla de información (infobox)
 
@@ -175,7 +196,8 @@ El código para extraer y mostrar la tabla de información es:
 
 infobox <- webpage %>% html_node('.infobox') %>% html_table()
 print(infobox)
- 
+ ![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/b5fb773d-31f9-4d29-849d-c8aebf798218)
+
 4.	Limpiar y estructurar los datos:
 Después de extraer los datos, a menudo es necesario limpiarlos y estructurarlos adecuadamente para su análisis.
 
@@ -184,12 +206,14 @@ El texto extraído puede contener espacios innecesarios que podemos eliminar uti
 El código a utilizar será el siguiente:
 
 Eight_paragraph_clean <- str_trim(Eight_paragraph) print(Eight_paragraph_clean)
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/473ed05d-a1ba-48b8-a3ca-652a82dccf2c)
 
 Luego podemos limpiar y estructurar la tabla de información, donde las tablas pueden requerir limpieza adicional, como renombrar columnas y filtrar filas innecesarias. Utilizamos funciones de `dplyr` para este propósito.
 
 El código para limpiar y estructurar la tabla de información es el siguiente:
  
 infobox_clean <- infobox %>% rename(Attribute = 1, Value = 2) %>% filter(!is.na(Attribute)) print(infobox_clean)
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/bedca705-d25a-4532-962b-69a604c8f1b7)
 
 5.	Análisis de Datos
 
@@ -204,6 +228,7 @@ Luego utilizaremos este código para realizar la reproductabilidad. infobox_clea
 print(infobox_clean)
  
 Donde quedará de la siguiente forma:
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/4346815b-7ec5-47e1-8b73-8980cd7060a3)
 
 Luego se realizó el cálculo de las medidas de resumen estadístico, donde utilizamos `summarise()` de `dplyr` para calcular medidas como la media, mediana, desviación estándar, entre otros.
 
@@ -214,7 +239,8 @@ Min = min(NumericValue), Max = max(NumericValue)
 print(summary_stats)
 
 Donde nos mostrará el siguiente resultado:
- 
+ ![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/30486245-3a21-455f-80df-225edae60d27)
+
 6.	Guardar los datos y resultados del análisis
 Finalmente, guardamos los datos extraídos y los resultados del análisis en archivos CSV para su uso posterior.
 El primer código nos servirá para poder guardar cada uno de los parrafos en un archivo de texto:
@@ -228,6 +254,8 @@ write.csv(infobox_clean, 'infobox_R.csv', row.names = FALSE)
 Y el tercer código nos servirá para guardar las medidas de resumen estádistico en archivo CSV (Excel)
 
 write.csv(summary_stats, 'summary_stats.csv', row.names = FALSE)
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/3663d6b0-14c2-48fd-a061-d063df78a60e)
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/164ff045-36c9-4746-9526-9dd440c318d9)
 
 CONCLUSIONES
 El uso de RStudio en el procesamiento y análisis de datos abarca desde la limpieza y transformación de datos hasta la visualización, ciencia e ingeniería de datos. Esta herramienta integral proporciona un entorno robusto y flexible que facilita el desarrollo y la implementación de cada uno de estos componentes clave. Al aprovechar las capacidades avanzadas de RStudio, las organizaciones pueden transformar datos crudos en información valiosa y accionable, lo que impulsa decisiones estratégicas fundamentadas en datos.
