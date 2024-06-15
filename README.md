@@ -28,6 +28,8 @@ Estadísticas del Modelo	10
 E.	INGENIERIA DE DATOS	10
 CONCLUSIONES	19
 RECOMENDACIONES	20
+![image](https://github.com/robertopulucg/ProyectoFinal/assets/172723505/9148abcd-202c-4300-8664-fcd3496ef3a4)
+
  
 INTRODUCCIÓN
 El procesamiento y análisis de grandes volúmenes de datos es una tarea compleja y multifacética que abarca varias disciplinas esenciales para extraer información valiosa de datos en bruto. En este contexto, el uso de RStudio, una herramienta poderosa y flexible para análisis de datos y programación estadística, resulta fundamental. RStudio proporciona un entorno integrado que facilita el desarrollo de cada uno de los componentes clave en el flujo de trabajo de datos.
